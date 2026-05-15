@@ -1,0 +1,6 @@
+PyYAML>=6.0
+pytest>=7.4.0
+sacrebleu>=2.4.0
+unbabel-comet>=2.2.0
+pandas>=2.2.0
+pyidaungsu>=0.1.4

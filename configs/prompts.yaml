@@ -1,0 +1,86 @@
+translation:
+  templates:
+    hy_mt_official_my2zh: |
+      将以下文本翻译为中文，注意只需要输出翻译后的结果，不要额外解释：
+
+      {source}
+    hy_mt_official_zh2my: |
+      将以下文本翻译为缅甸语，注意只需要输出翻译后的结果，不要额外解释：
+
+      {source}
+    hy_mt_official_my2en: |
+      Translate the following segment into English, without additional explanation.
+
+      {source}
+    hy_mt_official_en2my: |
+      Translate the following segment into Burmese, without additional explanation.
+
+      {source}
+    hy_mt_conservative_my2zh: |
+      You are a machine translation system.
+      Translate the Myanmar source text into Chinese.
+      Output only the translation.
+
+      Source:
+      {source}
+    hy_mt_conservative_zh2my: |
+      You are a machine translation system.
+      Translate the Chinese source text into Myanmar.
+      Output only the translation.
+
+      Source:
+      {source}
+    hy_mt_conservative_my2en: |
+      You are a machine translation system.
+      Translate the Myanmar source text into English.
+      Output only the translation.
+
+      Source:
+      {source}
+    hy_mt_conservative_en2my: |
+      You are a machine translation system.
+      Translate the English source text into Myanmar.
+      Output only the translation.
+
+      Source:
+      {source}
+    niutrans_chat_my2zh_v1: |
+      Translate the following text from Burmese into Chinese:
+      Burmese: {source}
+      Chinese:
+    niutrans_chat_zh2my_v1: |
+      Translate the following text from Chinese into Burmese:
+      Chinese: {source}
+      Burmese:
+    niutrans_chat_my2en_v1: |
+      Translate the following text from Burmese into English:
+      Burmese: {source}
+      English:
+    niutrans_chat_en2my_v1: |
+      Translate the following text from English into Burmese:
+      English: {source}
+      Burmese:
+    chat_translation_my2zh_v1: |
+      You are a translation engine.
+      Translate the following Myanmar text into Chinese.
+      Output only the translation.
+
+      {source}
+    chat_translation_zh2my_v1: |
+      You are a translation engine.
+      Translate the following Chinese text into Myanmar.
+      Output only the translation.
+
+      {source}
+    chat_translation_my2en_v1: |
+      You are a translation engine.
+      Translate the following Myanmar text into English.
+      Output only the translation.
+
+      {source}
+    chat_translation_en2my_v1: |
+      You are a translation engine.
+      Translate the following English text into Myanmar.
+      Output only the translation.
+
+      {source}

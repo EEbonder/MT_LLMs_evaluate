@@ -1,0 +1,68 @@
+# Local environments and machine state
+.autodl/
+.autodl_logs/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets and local credentials
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials*
+secrets*
+token*
+
+# Datasets, model weights, and external caches
+data/
+models/
+root-cache/
+tmp/
+
+# Generated outputs: keep only final public summaries
+outputs/*
+!outputs/full/
+outputs/full/*
+!outputs/full/EVALUATION_SUMMARY.md
+!outputs/full/metrics/
+outputs/full/metrics/*
+!outputs/full/metrics/summary/
+!outputs/full/metrics/summary/main_results.csv
+!outputs/full/metrics/summary/detail_results.csv
+
+# Logs and archives
+*.log
+logs/
+outputs/logs/
+outputs/archive/
+
+# Notebook/editor/system noise
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Large ML artifacts in case they appear outside models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.onnx
+*.model

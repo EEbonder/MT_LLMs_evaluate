@@ -1,0 +1,6 @@
+PyYAML>=6.0
+transformers>=4.56.0
+accelerate>=1.7.0
+torch>=2.3.0
+sentencepiece>=0.2.0
+bitsandbytes>=0.43.0

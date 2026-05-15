@@ -1,0 +1,160 @@
+models:
+  hy_mt1_5_7b:
+    hf_id: tencent/HY-MT1.5-7B
+    family: hy_mt
+    dtype: bf16
+    default_quantization: null
+    fallback_quantization: null
+    prompts:
+      my2zh: hy_mt_official_my2zh
+      zh2my: hy_mt_official_zh2my
+      my2en: hy_mt_official_my2en
+      en2my: hy_mt_official_en2my
+    load_mode: causal_lm
+    trust_remote_code: false
+    attn_implementation: null
+    device_map: auto
+    tokenizer_mode: chat
+    uses_chat_template: true
+    chat_add_generation_prompt: false
+    padding_side: left
+    max_input_length: 2048
+    stop_strings: []
+    tokenizer_kwargs: {}
+    apply_chat_template_kwargs: {}
+  niutrans_lmt_60_8b:
+    hf_id: NiuTrans/LMT-60-8B
+    family: niutrans
+    dtype: bf16
+    default_quantization: null
+    fallback_quantization: null
+    prompts:
+      my2zh: niutrans_chat_my2zh_v1
+      zh2my: niutrans_chat_zh2my_v1
+      my2en: niutrans_chat_my2en_v1
+      en2my: niutrans_chat_en2my_v1
+    load_mode: causal_lm
+    trust_remote_code: false
+    attn_implementation: null
+    device_map: auto
+    tokenizer_mode: chat
+    uses_chat_template: true
+    padding_side: left
+    max_input_length: 4096
+    stop_strings: []
+    tokenizer_kwargs:
+      fix_mistral_regex: true
+    apply_chat_template_kwargs: {}
+  gemma4_31b_it:
+    hf_id: google/gemma-4-31B-it
+    family: gemma
+    dtype: bf16
+    default_quantization: null
+    fallback_quantization: 8bit
+    prompts:
+      my2zh: chat_translation_my2zh_v1
+      zh2my: chat_translation_zh2my_v1
+      my2en: chat_translation_my2en_v1
+      en2my: chat_translation_en2my_v1
+    load_mode: causal_lm
+    trust_remote_code: false
+    attn_implementation: null
+    device_map: auto
+    tokenizer_mode: chat
+    uses_chat_template: true
+    padding_side: left
+    max_input_length: 4096
+    stop_strings:
+      - <end_of_turn>
+    apply_chat_template_kwargs:
+      enable_thinking: false
+  qwen3_32b:
+    hf_id: Qwen/Qwen3-32B
+    family: qwen
+    dtype: bf16
+    default_quantization: null
+    fallback_quantization: 8bit
+    prompts:
+      my2zh: chat_translation_my2zh_v1
+      zh2my: chat_translation_zh2my_v1
+      my2en: chat_translation_my2en_v1
+      en2my: chat_translation_en2my_v1
+    load_mode: causal_lm
+    trust_remote_code: false
+    attn_implementation: null
+    device_map: auto
+    tokenizer_mode: chat
+    uses_chat_template: true
+    padding_side: left
+    max_input_length: 4096
+    stop_strings: []
+    apply_chat_template_kwargs:
+      enable_thinking: false
+  gemma3_27b_it:
+    hf_id: google/gemma-3-27b-it
+    family: gemma
+    dtype: bf16
+    default_quantization: null
+    fallback_quantization: 8bit
+    prompts:
+      my2zh: chat_translation_my2zh_v1
+      zh2my: chat_translation_zh2my_v1
+      my2en: chat_translation_my2en_v1
+      en2my: chat_translation_en2my_v1
+    load_mode: causal_lm
+    trust_remote_code: false
+    attn_implementation: null
+    device_map: auto
+    tokenizer_mode: chat
+    uses_chat_template: true
+    padding_side: left
+    max_input_length: 4096
+    stop_strings:
+      - <end_of_turn>
+    apply_chat_template_kwargs:
+      enable_thinking: false
+  qwen3_moe_30b_a3b:
+    hf_id: Qwen/Qwen3-30B-A3B
+    family: qwen
+    dtype: bf16
+    default_quantization: null
+    fallback_quantization: 8bit
+    prompts:
+      my2zh: chat_translation_my2zh_v1
+      zh2my: chat_translation_zh2my_v1
+      my2en: chat_translation_my2en_v1
+      en2my: chat_translation_en2my_v1
+    load_mode: causal_lm
+    trust_remote_code: false
+    attn_implementation: null
+    device_map: auto
+    tokenizer_mode: chat
+    uses_chat_template: true
+    padding_side: left
+    max_input_length: 4096
+    stop_strings: []
+    apply_chat_template_kwargs:
+      enable_thinking: false
+  gemma4_moe_26b_a4b_it:
+    hf_id: google/gemma-4-26B-A4B-it
+    family: gemma
+    dtype: bf16
+    default_quantization: null
+    fallback_quantization: 8bit
+    prompts:
+      my2zh: chat_translation_my2zh_v1
+      zh2my: chat_translation_zh2my_v1
+      my2en: chat_translation_my2en_v1
+      en2my: chat_translation_en2my_v1
+    load_mode: causal_lm
+    trust_remote_code: false
+    attn_implementation: null
+    device_map: auto
+    tokenizer_mode: chat
+    uses_chat_template: true
+    padding_side: left
+    max_input_length: 4096
+    stop_strings:
+      - <end_of_turn>
+    apply_chat_template_kwargs:
+      enable_thinking: false
