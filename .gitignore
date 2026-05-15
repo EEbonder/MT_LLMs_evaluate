@@ -32,6 +32,12 @@ data/
 models/
 root-cache/
 tmp/
+rubbish/*
+!rubbish/README.md
+!rubbish/historical_setup/
+!rubbish/historical_setup/AUTODL_GPU_EVAL_PROMPT.md
+!rubbish/historical_setup/AUTODL_NO_GPU_SETUP_PROMPT.md
+!rubbish/historical_setup/opencode.json
 
 # Generated outputs: keep only final public summaries
 outputs/*
